@@ -15,6 +15,8 @@ Quizzical is a multiple choice quiz game that pulls 6 questions from the [Open T
   - Shuffles Answer Choices
   - Play Again Feature
 
+[Play Here](https://abuhelos.github.io/quizzical/)
+
 ## Solution Summary
 
 There were four components that were used and exported into the App file. They are Welcome.jsx, Quiz.jsx, Blob.jsx, and Button.jsx. A ternary was used to determine whether to display the home page or the quiz. Welcome was used for the home page while Button and Quiz were used for the functioning game. Blob is the blue and yellow splashes that are displayed in the background of both pages. Styled components was used for CSS and is located in the beginning portion of each file.
