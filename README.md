@@ -64,11 +64,12 @@ In the quiz component I added a function that utilized DOMParser to decode the s
 
 ## Future Improvements
 
-Possible improvements to this project are as follows:
+Possible improvements to this project:
 
 - Add a category selection feature so that the user can choose a category of trivia that they prefer.
-- Better usage of the Blob Component: The Blob component, which contained features for the page background was only used witht he quiz feature. The Welcome Page was hard coded with very similar code the the Blob component.
+- Better usage of the Blob Component: The Blob component, which contained features for the page background was only used with the quiz feature. The Welcome Page was hard coded with the same code as the Blob component.
 - Add an feature to choose the difficulty of the questions
+- Make game compatible for mobile screens
 
 ## References
 
