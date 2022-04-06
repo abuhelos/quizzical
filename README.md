@@ -24,7 +24,7 @@ App Component:
 
 - Uses a UseEffect to retrieve data from the API and shuffle the answer choices presented to the player using an array shuffle algorithm.
 - Contains functions to update score, keep track of radio button selection, and check answers. These functions as well as state variables are passed into the Quiz and Button components through props as needed.
-- Creates a variable quizElements which maps an array of question objects, show below, and sends its values into the quiz component which will create UI components for each question.
+- Creates a variable quizElements which maps an array of question objects and sends its values into the quiz component which will create UI components for each question.
 
 Quiz Component:
 
