@@ -35,8 +35,8 @@ Quiz Component:
 Button:
 
 - Beneath the questions, a check answers button or an end game prompt will be conditionally rendered depending on the state of checkAnswer.
-- Once the check answer button will call on gradeQuiz function on click. This function determines loops through the quiz data to see if the selected answers match the correct answers. The player will be awareded a point for every answers that matches. The checkAnswer state is then changed to true and will render teh resulting score and the play again button
-- The play again button resets the state of all the variables and increases the value of the gameCount to trigger the useEffect function to pull new trivia questions from the Open Trivia Database.
+- Clicking the Check Answers button calls a function from the App component that grades the quiz and changes the state of checkAnswers. checkAnswers is used to determine whether the Check Answers button or the final score should be displayed. 
+- The play again button resets the state of all the variables. It increases the value of a state, gameCount, to trigger the useEffect function to pull new trivia questions from the Open Trivia Database.
 
 ## Challenges
 
