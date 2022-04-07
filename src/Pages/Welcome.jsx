@@ -63,6 +63,33 @@ margin: 10px;
 
 color: #293264;
 `
+const Label = styled.label`
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+
+margin-top: 5px;
+
+color: #293264;
+`
+const Select = styled.select`
+  display: inline-block;
+  width: 160px;
+  height: 34px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 15px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+
+  color: #293264;
+`
+
 const Start = styled.button`
 height: 50px;
 width: 200px;
@@ -88,7 +115,20 @@ export default function Welcome(props) {
   return (
     <Container>
         <Title>Quizzical</Title>
-        <Description>Can you guess all 6?</Description>
+        <Description>Can you guess them all?</Description>
+        <br/>
+        <Label htmlFor="quizLength">Select Quiz Length</Label>
+        <br />
+        <Select
+          id = "quizLength"
+          value= {props.quizLength}
+          onChange={props.handleQuizLength}
+          name="quizLength"
+        >
+          <option value={1}>1 Question</option>
+          <option value={3}>3 Questions</option>
+          <option value={6}>6 Questions</option>
+        </Select>
         <Start onClick={props.quizToggle}>Start Quiz</Start>
 
         <BlueBlob/>

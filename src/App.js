@@ -17,9 +17,12 @@ function App() {
   const [score, setScore] = useState()
   const [gameCount, setGameCount] = useState(0)
 
+  const [quizLength, setQuizLength] = useState(6)
+
   useEffect(function () {
     const fetchData = async () => {
-      const res = await fetch('https://opentdb.com/api.php?amount=6');
+      console.log(quizLength)
+      const res = await fetch(`https://opentdb.com/api.php?amount=${quizLength}`)
       const data = await res.json();
       setQuizData(processData(data));
     }
@@ -50,6 +53,19 @@ function App() {
 
   function quizToggle() {
     setQuizStart(!quizStart)
+  }
+
+  function handleQuizLength(event) {
+    const {name, value, id} = event.target
+    const fetchData = async () => {
+      setQuizLength(value)
+      console.log(quizLength)
+      const res = await fetch(`https://opentdb.com/api.php?amount=${value}`)
+      const data = await res.json();
+      setQuizData(processData(data));
+    }
+    fetchData()
+      .catch(console.error)
   }
 
   function handleChange(event) {
@@ -99,6 +115,8 @@ function App() {
       ? <div>
           <Welcome
           quizToggle = {quizToggle}
+          handleQuizLength = {handleQuizLength}
+          quizLength = {quizLength}
           /> 
           <Blob/>
         </div> 
