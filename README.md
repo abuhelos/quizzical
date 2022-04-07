@@ -14,6 +14,7 @@ Quizzical is a multiple choice quiz game that pulls 6 questions from the [Open T
   - Calculates Game Score State
   - Shuffles Answer Choices
   - Play Again Feature
+  - Adjustable quiz length
 
 
 ## Solution Summary
