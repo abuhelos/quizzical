@@ -1,4 +1,4 @@
-# [Quizzical](https://abuhelos.github.io/quizzical/)
+# Quizzical | Click [Here](https://abuhelos.github.io/quizzical/) to Play
 
 Quizzical is a multiple choice quiz game that pulls 6 questions from the [Open Trivia Database API](https://opentdb.com/). This app contains the following:
 
